@@ -44,3 +44,81 @@
     - Such as Phone book.
     - Divide and Conquer when finding a phone book.
     - Don't need to check(operate on) every single element.
+
+## Binary Search Tree
+
+    - Rules:
+    1. All child nodes in the tree to the right of the root node must be greater than the current node. IF go to the right, numbers increase.
+
+    2. A node can only have up to 2 children because it's binary tree.
+
+    - Searching and Lookup is very easy.
+
+    - Lookup:   O(log N)
+    - Insert:   O(log N)
+    - Delete:   O(log N)
+
+## Balanced VS Unbalanced BST
+
+    - in unbalanced BST, where all nodes are just keep getting added to the i.e. right to right: it turns into a **Linked List** looping through every single node.
+    - Then, Loopup:     O(n)
+    - Insert: O(n)
+    - Delete: O(n), Linear time.
+    # CIQ: Why Unbalanced Binary Search Tree is bad?
+
+    - How do we balance Tree? There are, but less chance to encounter it in interviews. It's time-consuming and there are some tradeoffs.
+
+## Pros and Cons of BST
+
+    - Pros: Better than O(n), Ordered, Flexible Size.
+    - Cons: No O(1) operations.
+
+    - Compared to Arrays, Search is faster where we O(n), or iterate through all variable if it's an unsorted array.
+    - Compared to Hash Tables, although hash tables allow us to insert and search at constant time, with BST, we have sorted data, structure parent-child relationship.
+    - Binary aren't the fastest of anything.
+
+## AVL + Red Balck Tree (Balanced Binary Tree)
+
+    - https://visualgo.net/bn/bst"
+    - https://www.cs.usfca.edu/~galles/visualization/AVLtree.html
+    - https://medium.com/basecs/the-little-avl-tree-that-could-86a3cae410c7
+
+    - https://www.cs.usfca.edu/~galles/visualization/RedBlack.html
+    - https://medium.com/basecs/painting-nodes-black-with-red-black-trees-60eacb2be9a5
+    - Most popular Binary Trees
+
+## Binary Heap
+
+    - Every child belongs to a parent that has a greater priority or value
+    - Max Heap: root value is the biggest one.
+    - Min Heap: root = the smallest.
+    - In a binary heap, every node on the top level has a greater value than every node on the next level down.
+    - Heap can be used in any algorithm where ordering is important.
+
+    - Lookup:   O(n)    ,less organised than BST, no meaning to the right or left child.
+    - Insert:   O(log n)
+    - Delete:   O(log n)
+
+    - Why would we want?
+    - Good at comparative operations, such as numbers greater than 33.
+
+    - Heaps use a lot in data storage, priority queues, sorting algorithms.
+    - "https://visualgo.net/en/heap"
+    - Memory Heap != Heap Data Structure
+
+    - It takes up the least amount of space possible, because of left right insertion.
+    - It preverses this order of insertion (left or right)
+    - It is useful for Priority Queue: Each element has its priority.
+    - Such as Club, or Emergency room, Airplane
+
+    - "https://www.geeksforgeeks.org/implementation-priority-queue-javascript/"
+    - Pros: Better than O(n), Priority, Flexible Size, Fast Insert.
+    - Cons: Slow lookup
+
+## Trie (Prefix Tree)
+
+    - Specialised tree good at searching especially text
+    - Has empty root node.
+    - Such as Auto suggestion, IP routing.
+    - Advantage in Speed and space.
+    - O(length of the word)
